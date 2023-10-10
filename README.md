@@ -35,7 +35,7 @@ The goal of this homework is to analyze Wikipedia pageview data for a collection
 
 - Data retrieval is done using the Wikimedia Foundation REST API.
 - The retrieved data is processed and organized into Pandas DataFrames.
-- The project focuses on mobile, desktop, and cumulative access types.
+- The homework focuses on mobile, desktop, and cumulative access types.
 
 ## Known Issues   
 
