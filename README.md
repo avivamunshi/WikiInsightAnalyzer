@@ -40,3 +40,4 @@ The goal of this homework is to analyze Wikipedia pageview data for a collection
 ## Known Issues   
 
 - The code includes rate-limiting to avoid exceeding API limits.
+- The JSON file for desktop has been added as a zip file, due to size constraints.
