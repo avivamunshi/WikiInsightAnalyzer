@@ -28,7 +28,7 @@ The goal of this homework is to analyze Wikipedia pageview data for a collection
     
 - **Output Data:**
   - `academy_monthly_mobile_<start201507>-<end202309>.json`: JSON file containing monthly mobile access pageview data.
-  - `academy_monthly_desktop_<start201507>-<end202309>.json`: JSON file containing monthly desktop access pageview data.
+  - `academy_monthly_desktop_<start201507>-<end202309>.zip`: JSON file containing monthly desktop access pageview data. This was added as a zip file due to size constraints.
   - `academy_monthly_cumulative_<start201507>-<end202309>.json`: JSON file containing monthly cumulative pageview data.
 
 ## Data Retrieval and Processing   
