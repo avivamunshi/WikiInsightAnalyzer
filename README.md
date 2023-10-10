@@ -22,7 +22,12 @@ Additionally, you may not apply legal terms or technological measures that legal
 References to API   
 
 Outputs    
+These are the JSON files that are in the output:
+1. Monthly mobile access - The API separates mobile access types into two separate requests, you will need to sum these to make one count for all mobile pageviews. You should store the mobile access data in a file called: academy_monthly_mobile_<startYYYYMM>-<endYYYYMM>.json   
 
+3. Monthly desktop access - Monthly desktop page traffic is based on one single request. You should store the desktop access data in a file called:
+academy_monthly_desktop_<startYYYYMM>-<endYYYYMM>.json  
+4. Monthly cumulative - Monthly cumulative data is the sum of all mobile, and all desktop traffic per article. You should store the monthly cumulative data in a file called: academy_monthly_cumulative_<startYYYYMM>-<endYYYYMM>.json  
 
 
 
