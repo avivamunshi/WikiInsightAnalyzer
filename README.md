@@ -1,31 +1,42 @@
-# data-512-homework_1
+# DATA 512 HW1
 
-Data 512  
+## Goal of HW1
 
-Homework 1: Professionalism & Reproducibility  
+The goal of this homework is to analyze Wikipedia pageview data for a collection of articles, focusing on access types, popularity, and data completeness. This involves retrieving pageview data using the Wikimedia Foundation REST API, processing and analyzing the data, and generating insights through visualizations.
 
-**Goal**  
-The goal of this project is to obtain monthly article traffic data, conduct a thorough analysis, and present the findings in a verifiable manner.
+# Sources and Licenses
 
-**Licenses**         
-Source Data - https://creativecommons.org/licenses/by/4.0/   
-Wikimedia Foundation REST API Terms of Use - https://www.mediawiki.org/wiki/API:REST_API#Terms_and_conditions   
-REST API Documentation -https://wikimedia.org/api/rest_v1/#/Pageviews_data/get_metrics_pageviews_aggregate_project_access_agent_granularity_start_end 
-Pageviews API Documentation - https://wikitech.wikimedia.org/wiki/Analytics/AQS/Pageviews    
+## Data Sources
 
-**Replication**   
+- **English Wikipedia Data**: The source data comes from English Wikipedia, and the text is licensed under the "Creative Commons Attribution Share-Alike license" ([CC BY-SA 3.0 License](https://en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License)).
 
-Outputs    
-These are the JSON files that are in the output:
-1. Monthly mobile access - The API separates mobile access types into two separate requests, you will need to sum these to make one count for all mobile pageviews. You should store the mobile access data in a file called: academy_monthly_mobile_<startYYYYMM>-<endYYYYMM>.json   
+- **Wikimedia Foundation REST API**: We leverage the Wikimedia Foundation REST API to retrieve additional data. Please refer to the Wikimedia Foundation REST API's terms of use for more information ([Terms and Conditions](https://www.mediawiki.org/wiki/REST_API#Terms_and_conditions)).
 
-3. Monthly desktop access - Monthly desktop page traffic is based on one single request. You should store the desktop access data in a file called:
-academy_monthly_desktop_<startYYYYMM>-<endYYYYMM>.json  
-4. Monthly cumulative - Monthly cumulative data is the sum of all mobile, and all desktop traffic per article. You should store the monthly cumulative data in a file called: academy_monthly_cumulative_<startYYYYMM>-<endYYYYMM>.json  
+## Code Attribution
+
+- **Code Developed by Dr. David W. McDonald**: We make use of code developed by Dr. David W. McDonald for Data 512, which is provided under the [Creative Commons CC-BY license](https://creativecommons.org/licenses/by/4.0/). You can find more information about Creative Commons licensing [here](https://creativecommons.org/).
+
+## List of Academy Award Winning Articles
+
+- **List of Academy Award Winning Articles**: We will be using a list of Academy Award-winning article titles provided by Dr. McDonald. The list can be found [here](https://drive.google.com/drive/folders/1lPJF73GX5Vyu2uAvT5VpAY-xGwP2fCCx).
 
 
+## Data Files
 
+- **Input Data:**
+  - `thank_the_academy.AUG.2023.csv`: A CSV file containing movie-related data, used to fetch pageview data for movies. Can be found here: https://drive.google.com/file/d/1p7pfcakjI5YQpw0JI2HX9Lff318TBPmz/view?usp=sharing      
+    
+- **Output Data:**
+  - `academy_monthly_mobile_<start201507>-<end202309>.json`: JSON file containing monthly mobile access pageview data.
+  - `academy_monthly_desktop_<start201507>-<end202309>.json`: JSON file containing monthly desktop access pageview data.
+  - `academy_monthly_cumulative_<start201507>-<end202309>.json`: JSON file containing monthly cumulative pageview data.
 
+## Data Retrieval and Processing   
 
+- Data retrieval is done using the Wikimedia Foundation REST API.
+- The retrieved data is processed and organized into Pandas DataFrames.
+- The project focuses on mobile, desktop, and cumulative access types.
 
+## Known Issues   
 
+- The code includes rate-limiting to avoid exceeding API limits.
