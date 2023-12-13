@@ -1,8 +1,4 @@
-# DATA 512 HW1
-
-## Goal of HW1
-
-The goal of this homework is to analyze Wikipedia pageview data for a collection of articles, focusing on access types, popularity, and data completeness. This involves retrieving pageview data using the Wikimedia Foundation REST API, processing and analyzing the data, and generating insights through visualizations.
+The goal of this project is to analyze Wikipedia pageview data for a collection of articles, focusing on access types, popularity, and data completeness. This involves retrieving pageview data using the Wikimedia Foundation REST API, processing and analyzing the data, and generating insights through visualizations.
 
 # Sources and Licenses
 
